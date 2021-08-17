@@ -1,0 +1,27 @@
+.currencyContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.currencyDasboard {
+    margin-top: 30px;
+}
+
+.button {
+  position: absolute;
+  top: 80%;
+  padding: 10px 40px;
+  border-radius: 10px;
+  outline: none;
+  background-color: rgb(23, 228, 57);
+  font-weight: 700;
+  color: white;
+  border: 1px solid black;
+}
+
+button:hover{
+    transform: scale(1.1); 
+    
+}
