@@ -1,16 +1,18 @@
 
 .currencyContainer {
-    
     flex-direction: column;
     font-family: 'Montserrat', sans-serif;
 }
 
  .currencyDasboard {
-    margin-top: 30px;
-    
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 } 
 
-.button {
+button {
   margin-top:20px ;
   padding: 10px 40px;
   border-radius: 10px;
@@ -29,6 +31,7 @@
 .all{
     display: flex;
     flex-direction: column;
+  
 }
 
 .card {
@@ -78,7 +81,19 @@ option:hover {
     margin:5px 0;
 }
 
-input-placeholder {
-    color:black
+#pressbutton{
+    display: flex;
+    align-items: center;
 }
 
+#addCurrency {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#nameflex{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}

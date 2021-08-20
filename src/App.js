@@ -8,11 +8,11 @@ const App= ()=> {
 
   return (
     <div className="container">
-      <h1 className='title'> Currency Exchange</h1>
-      <DateComponent/>
-      
-      <Currency className='currency'/>
-      
+      <div className='container-wrap'>
+        <h1 className='title'> Currency Exchange</h1>
+        <DateComponent/>
+        <Currency />
+      </div>
     </div>
   );
 }
