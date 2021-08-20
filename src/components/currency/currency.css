@@ -1,14 +1,14 @@
+
 .currencyContainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    
     flex-direction: column;
+    font-family: 'Montserrat', sans-serif;
 }
 
  .currencyDasboard {
     margin-top: 30px;
+    
 } 
-
 
 .button {
   margin-top:20px ;
@@ -19,6 +19,7 @@
   font-weight: 700;
   color: white;
   border: 1px solid black;
+  font-size: 18px;
 }
 
 .button:hover{
@@ -32,14 +33,48 @@
 
 .card {
     border: 1px solid black;
-    padding: 10px;
+    padding: 10px 10px 5px 10px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin: 10px
 }
 
 .modal {
     display: flex;
-    
 }
 
 option:hover {
     border:  1px solid red;
 }
+
+#card-row {
+    display: flex;
+    flex-direction: row;  
+    align-items: center;
+    justify-content: space-between;
+}
+
+#sign {
+    margin: 0 5px;
+}
+
+.delete-btn {
+    float: right;
+    color: red;
+    font-weight: 600;
+    outline: none;
+    cursor: pointer;
+    background: none;
+    overflow: hidden;
+}
+
+#fullname {
+    align-self: flex-end;
+    font-size: 12px;
+}
+
+#first {
+    margin:5px 0;
+}
+
