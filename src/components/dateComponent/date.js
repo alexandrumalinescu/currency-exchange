@@ -7,9 +7,9 @@ const DateComponent= ()=> {
     const displayDate = date.getDate()+'/'+date.getMonth()+'/'+date.getFullYear();
     
     return (
-        <div className='date'>
+        <h1 className='date'>
             {displayDate}
-        </div>
+        </h1>
     )
 }
 

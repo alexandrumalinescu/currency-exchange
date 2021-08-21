@@ -52,9 +52,6 @@ button {
     background-color: rgb(208, 219, 255);
 }
 
-.modal {
-    display: flex;
-}
 
 #card-row {
     display: flex;
@@ -113,4 +110,16 @@ input {
     flex-wrap: wrap;
     margin: 0;
     padding: 0;
+}
+
+ul  {
+    
+    padding: 5px 0;
+    margin: 0 ;
+    
+}
+
+.modal {
+    display: grid;
+    align-items: center;
 }
