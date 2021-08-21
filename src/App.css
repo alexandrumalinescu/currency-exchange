@@ -31,3 +31,13 @@ button {
   justify-content: center;
   text-align: center;
 }
+
+ul {
+  display: flex;
+  align-items: center;
+}
+
+.nameAndFlag:hover {
+
+  transform: scale(1.2);
+}

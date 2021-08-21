@@ -11,7 +11,7 @@ const App= ()=> {
       <div className='container-wrap'>
         <h1 className='title'> Currency Exchange</h1>
         <DateComponent/>
-        <Currency />
+        <Currency className='arangeCurrency'/>
       </div>
     </div>
   );

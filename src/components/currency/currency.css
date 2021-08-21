@@ -1,11 +1,12 @@
-
 .currencyContainer {
+    display: flex;
+    align-content: center;
     flex-direction: column;
     font-family: 'Montserrat', sans-serif;
 }
 
  .currencyDasboard {
-    margin-top: 20px;
+    margin-top: 5px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -28,27 +29,31 @@ button {
     transform: scale(1.1); 
 } 
 
-.all{
-    display: flex;
-    flex-direction: column;
-  
-}
 
 .card {
     border: 1px solid black;
     padding: 10px 10px 5px 10px;
     display: flex;
     flex-direction: column;
-    position: relative;
-    margin: 10px
+    align-content: center;
+    justify-content: space-evenly;
+    margin: 10px;
+    background-color: gainsboro;
+}
+
+.card-main {
+    border: 1px solid black;
+    padding: 10px 10px 5px 10px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-evenly;
+    margin: 10px;
+    background-color: rgb(208, 219, 255);
 }
 
 .modal {
     display: flex;
-}
-
-option:hover {
-    border:  1px solid red;
 }
 
 #card-row {
@@ -96,4 +101,16 @@ option:hover {
     display: flex;
     align-items: flex-start;
     flex-direction: column;
+}
+
+input {
+    border: 1px solid black;
+}
+
+.fix{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
 }
