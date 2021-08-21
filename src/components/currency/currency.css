@@ -27,9 +27,10 @@ button {
 
 .button:hover{
     transform: scale(1.1); 
+    cursor: pointer;
 } 
 
-
+button:hover{cursor: pointer;}
 .card {
     border: 1px solid black;
     padding: 10px 10px 5px 10px;
@@ -86,6 +87,7 @@ button {
 #pressbutton{
     display: flex;
     align-items: center;
+   
 }
 
 #addCurrency {
@@ -120,6 +122,13 @@ ul  {
 }
 
 .modal {
-    display: grid;
-    align-items: center;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    
+    justify-content: ;
+}
+
+.currencyClose {
+    background-color: rgb(202, 113, 113);
 }
