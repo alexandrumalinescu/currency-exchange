@@ -1,0 +1,79 @@
+.cardElements {
+    display: flex;
+    flex-direction: row;
+}
+
+.flagSymbol {
+    display: flex;
+    margin: 5px 0;
+    
+}
+
+.sign{
+    margin: 0 5px;
+}
+
+.elements {
+    display: flex;
+    flex-direction: column;
+    margin: 5px 0;
+    font-size: 12px;
+}
+
+.currencyName {
+    margin: 5px 0;
+    padding-top: 5px ;
+}
+
+
+@media only screen and (max-width:550px){
+ 
+    .card-main{
+        display: grid;
+        width: 100vw;
+        padding: 0;
+        margin: 0;   
+    }
+    .card{
+        display: grid;
+        width: 100vw;
+        padding: 0;
+        margin: 0;
+    }
+    .fix {
+        display: flex;
+        width: 100vw;
+        
+    }
+    button {
+        display: grid;
+        width: 100vw;
+        margin-top:0px;
+        width: 100%;
+    }
+
+    .card-row {
+        display: flex;
+        flex-direction: row;
+        
+    }
+    ul {
+        border:  1px solid black;
+        background-color: gainsboro;
+    }
+    
+    
+
+    .modal{
+        width: 100vw;
+    }
+}
+
+::-webkit-input-placeholder {
+    color:black
+}
+
+option:hover {
+    cursor: pointer;
+    transform: scale(1.02);
+}
