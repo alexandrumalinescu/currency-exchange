@@ -4,7 +4,6 @@ import getSymbolFromCurrency from "currency-symbol-map";
 import "../additionalCard/additionalCardStyle.css";
 import axios from "axios";
 
-
 const AdditionalCard = (props) => {
   const [getRate, setGateRate] = useState([]);
   const setCurrency = props.setCurrency;
@@ -18,22 +17,21 @@ const AdditionalCard = (props) => {
   const fecthCompareRates = props.fecthCompareRates;
 
   const API_KEY = "ef92ef24467a54ddf77b3ca107fbcb93";
-
-  const fetchData = () => {
-    const urlRates = `https://api.exchangeratesapi.io/v1/latest?access_key=${API_KEY}&base=${base1}&symbols=${fecthCompareRates}`;
-    const getRates = axios.get(urlRates);
-    axios.all([getRates]).then(
-      axios.spread((...allData) => {
-        const allDataRates = Object.values(allData[0].data.rates);
-        setGateRate(allDataRates);
-      })
-    );
-  };
-
   useEffect(() => {
+    const fetchData = () => {
+      const urlRates = `https://api.exchangeratesapi.io/v1/latest?access_key=${API_KEY}&base=${base1}&symbols=${fecthCompareRates}`;
+      const getRates = axios.get(urlRates);
+      axios.all([getRates]).then(
+        axios.spread((...allData) => {
+          const allDataRates = Object.values(allData[0].data.rates);
+          setGateRate(allDataRates);
+        })
+      );
+    };
     fetchData();
   }, [fecthCompareRates]);
 
+  //delete currency cards
    const handleDelete = (item)=>{
      const filteredCurrency= compareBeforesli.filter(
        currentValue=>(currentValue!==item)
@@ -42,8 +40,9 @@ const AdditionalCard = (props) => {
    }
 
   const handleDeleteAll = ()=>{setCurrency([])}
-
   const sign = getSymbolFromCurrency("EUR");
+  
+  // Returning cards
   return (
     <div className='fix'>
       <div >
@@ -96,7 +95,6 @@ const AdditionalCard = (props) => {
                 <div className="elements">
                   <input
                     placeholder={`${input1 * getRate[i]}`}
-                   
                   ></input>
                   <div id='nameflex'>
                   <div className="currencyName">{compare[i]}-{currencyFullname[i + 1]}</div>

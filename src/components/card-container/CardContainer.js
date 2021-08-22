@@ -7,13 +7,15 @@ const CardContainer = (props) => {
     const currency=props.currency
     const setCurrency=props.setCurrency
     const name=props.name;
+    //spliting the currency to get the main one
     let base=currency[0]
+    console.log(base)
     const sliceBase= (item)=>{
       if(item !== undefined){
         return item.slice(0,3)
       }
     }
-
+    //spliting to get the currency name onyly
     const sliceFullName = (item)=>{
       if(item){return (currency.map(item=>item.slice(0,3)))}
     }
